@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_stripe_payment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/googlesearch"
+    tools:context="com.mv.vacay.main.payment.VerifyPaymentActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/checkTV"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="27dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:padding="10dp"
+        android:background="#b1ffffff"
+        android:id="@+id/accountPage">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please update your account"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textColor="#6d4659"
+            android:textStyle="bold"
+            android:id="@+id/title"
+            android:layout_marginTop="10dp" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="First Name:"
+                    android:textSize="14sp"
+                    android:id="@+id/first"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="First Name"
+                    android:textSize="16sp"
+                    android:id="@+id/firstName"
+                    android:padding="3dp"
+                    android:layout_below="@+id/first"
+                    android:layout_marginTop="3dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:id="@+id/view2"
+                    android:background="#000"
+                    android:layout_below="@+id/firstName"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last Name:"
+                    android:textSize="14sp"
+                    android:id="@+id/last"
+                    android:layout_below="@+id/view2"
+                    android:layout_marginTop="10dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Last Name"
+                    android:textSize="16sp"
+                    android:id="@+id/lastName"
+                    android:padding="3dp"
+                    android:layout_below="@+id/last"
+                    android:layout_marginTop="3dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:id="@+id/view3"
+                    android:background="#000"
+                    android:layout_below="@+id/lastName"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email:"
+                    android:textSize="14sp"
+                    android:id="@+id/email"
+                    android:layout_below="@+id/view3"
+                    android:layout_marginTop="10dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Your Email"
+                    android:textSize="16sp"
+                    android:id="@+id/emailbox"
+                    android:padding="3dp"
+                    android:layout_below="@+id/email"
+                    android:layout_marginTop="3dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:id="@+id/view1"
+                    android:background="#000"
+                    android:layout_below="@+id/emailbox"/>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/bankNumberContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dateContainer"
+                    android:layout_marginTop="5dp">
+                    <AutoCompleteTextView
+                        android:id="@+id/bankNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Bank Account Number"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textSize="16sp"
+                        android:textColor="#ff02b3"
+                        android:paddingLeft="8dp"
+                        android:textColorHint="#ff02b3"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/countryContainer"
+                    android:layout_below="@+id/routingContainer"
+                    android:text="Country"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:background="@drawable/yellow_round_fill"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="16sp"/>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/routingContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bankNumberContainer"
+                    android:layout_marginTop="5dp">
+                    <AutoCompleteTextView
+                        android:id="@+id/routing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Routing Number"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textSize="16sp"
+                        android:textColor="#ff02b3"
+                        android:paddingLeft="8dp"
+                        android:textColorHint="#ff02b3"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/cityContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/countryContainer"
+                    android:layout_marginTop="5dp">
+                    <AutoCompleteTextView
+                        android:id="@+id/city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="City"
+                        android:inputType="textCapWords"
+                        android:maxLines="1"
+                        android:textSize="16sp"
+                        android:textColor="#ff02b3"
+                        android:paddingLeft="8dp"
+                        android:textColorHint="#ff02b3"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/addresslineContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cityContainer"
+                    android:layout_marginTop="2dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/addressLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Address(Street address/PO Box/Company name)"
+                        android:inputType="textCapWords"
+                        android:maxLines="1"
+                        android:textSize="14sp"
+                        android:textColor="#ff02b3"
+                        android:paddingLeft="8dp"
+                        android:textColorHint="#ff02b3"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/postalContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addresslineContainer"
+                    android:layout_marginTop="2dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/postalCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Postal Code"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textSize="14sp"
+                        android:textColor="#ff02b3"
+                        android:paddingLeft="8dp"
+                        android:textColorHint="#ff02b3"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/stateContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/postalContainer"
+                    android:layout_marginTop="2dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="State"
+                        android:inputType="textCapWords"
+                        android:maxLines="1"
+                        android:textSize="14sp"
+                        android:textColor="#ff02b3"
+                        android:paddingLeft="8dp"
+                        android:textColorHint="#ff02b3"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ssnContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stateContainer"
+                    android:layout_marginTop="2dp">
+                    <AutoCompleteTextView
+                        android:id="@+id/ssnLastFour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="SSN_Last_4"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textSize="16sp"
+                        android:textColor="#ff02b3"
+                        android:paddingLeft="8dp"
+                        android:textColorHint="#ff02b3"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Birthday:"
+                    android:textSize="14sp"
+                    android:id="@+id/birthday"
+                    android:layout_below="@+id/view1"
+                    android:layout_marginTop="10dp" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/dateContainer"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/birthday"
+                    android:layout_marginTop="5dp">
+                    <AutoCompleteTextView
+                        android:id="@+id/day"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Date"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:textSize="16sp"
+                        android:textColor="#ff02b3"
+                        android:paddingLeft="8dp"
+                        android:textColorHint="#ff02b3"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/monthContainer"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/dateContainer"
+                    android:layout_below="@+id/birthday"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp">
+                    <AutoCompleteTextView
+                        android:id="@+id/month"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Month"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:textSize="16sp"
+                        android:textColor="#ff02b3"
+                        android:paddingLeft="8dp"
+                        android:textColorHint="#ff02b3"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/yearContainer"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/monthContainer"
+                    android:layout_below="@+id/birthday"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp">
+                    <AutoCompleteTextView
+                        android:id="@+id/year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Year"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:textSize="16sp"
+                        android:textColor="#ff02b3"
+                        android:paddingLeft="8dp"
+                        android:textColorHint="#ff02b3"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UPDATE"
+                    android:textSize="16sp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:background="@drawable/green_fillround"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/updateButton"
+                    android:layout_below="@+id/ssnContainer"
+                    android:layout_marginTop="10dp" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

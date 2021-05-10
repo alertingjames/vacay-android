@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8e8e8">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/green_thin_stroke">
+        <EditText
+            android:id="@+id/customView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:singleLine="false"
+            android:hint="Please input the provider email"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="5dp"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:background="@null"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/green_fillround">
+        <TextView
+            android:id="@+id/loc_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:singleLine="false"
+            android:textStyle="bold"
+            android:text="Please click here to select the provider's location"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            />
+    </LinearLayout>
+</LinearLayout>

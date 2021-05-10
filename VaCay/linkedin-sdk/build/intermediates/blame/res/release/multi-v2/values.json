@@ -1,0 +1,48 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\DATA\\TestProjects\\VaCay\\linkedin-sdk\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "E:\\DATA\\TestProjects\\VaCay\\linkedin-sdk\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "4,3,2,1",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "295,229,90,16",
+                        "endColumns": "61,65,138,73",
+                        "endOffsets": "352,290,224,85"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,117,183,322",
+                        "endColumns": "61,65,138,73",
+                        "endOffsets": "112,178,317,391"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "E:\\DATA\\TestProjects\\VaCay\\linkedin-sdk\\build\\intermediates\\res\\merged\\release\\values\\values.xml",
+            "map": [
+                {
+                    "source": "E:\\DATA\\TestProjects\\VaCay\\linkedin-sdk\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "4,3,2,1",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "295,229,90,16",
+                        "endColumns": "61,65,138,73",
+                        "endOffsets": "352,290,224,85"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,117,183,322",
+                        "endColumns": "61,65,138,73",
+                        "endOffsets": "112,178,317,391"
+                    }
+                }
+            ]
+        }
+    ]
+}

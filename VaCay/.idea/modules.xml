@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/VaCay.iml" filepath="$PROJECT_DIR$/VaCay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidYoutubeSearch/VaCay.androidYoutubeSearch.iml" filepath="$PROJECT_DIR$/.idea/modules/androidYoutubeSearch/VaCay.androidYoutubeSearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/VaCay.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/VaCay.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/emojilib/VaCay.emojilib.iml" filepath="$PROJECT_DIR$/.idea/modules/emojilib/VaCay.emojilib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/forecast/VaCay.forecast.iml" filepath="$PROJECT_DIR$/.idea/modules/forecast/VaCay.forecast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/forecastie/VaCay.forecastie.iml" filepath="$PROJECT_DIR$/.idea/modules/forecastie/VaCay.forecastie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/linkedin-sdk/VaCay.linkedin-sdk.iml" filepath="$PROJECT_DIR$/.idea/modules/linkedin-sdk/VaCay.linkedin-sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/weather/VaCay.weather.iml" filepath="$PROJECT_DIR$/.idea/modules/weather/VaCay.weather.iml" />
+    </modules>
+  </component>
+</project>

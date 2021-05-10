@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.mv.vacay.main.meetfriends.FriendSurveyAnswerViewActivity">
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/arrow1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Friend's Survey Answers"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:padding="15dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:id="@+id/answer_survey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Friend's Survey Answers"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:padding="15dp"
+        android:layout_marginTop="5dp"/>
+</LinearLayout>

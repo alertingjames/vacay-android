@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "932647315647",
+    "firebase_url": "https://vacay-42bcd.firebaseio.com",
+    "project_id": "vacay-42bcd",
+    "storage_bucket": "vacay-42bcd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932647315647:android:9ac1ad781ff60281",
+        "android_client_info": {
+          "package_name": "com.mv.vacay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932647315647-h2nfphlirjmf7msnogobgrspduo9b1aq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mv.vacay",
+            "certificate_hash": "1a3f32e378adb5056de0bded81b88e853ac7d1ef"
+          }
+        },
+        {
+          "client_id": "932647315647-0rpdkkpm3e21nupk0150tovbkrmn0ho1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1e8-93-ia4seBJlMR7_BPt-pxnWGrgNA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "932647315647-0rpdkkpm3e21nupk0150tovbkrmn0ho1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

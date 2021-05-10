@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Gallery -->
+    <item
+        android:id="@+id/attach_gallery"
+        android:title="From Gallery"
+        android:icon="@drawable/ic_action_picture"
+        android:showAsAction="always"
+        android:onClick="fromGallery"
+        />
+
+    <!-- Photo -->
+    <item
+        android:id="@+id/attach_photo"
+        android:title="Take photo"
+        android:icon="@drawable/ic_action_camera"
+        android:showAsAction="always"
+        android:onClick="takePhoto"
+        app:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,67 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="app_bar_height">240dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="layout_margin_default">10dp</dimen>
+    <dimen name="layout_padding_default">15dp</dimen>
+    <dimen name="header_img_size">70dp</dimen>
+    <dimen name="divider_height">0.5dp</dimen>
+
+    <dimen name="nav_drawer_width">235dp</dimen>
+
+    <dimen name="header_font_size">14sp</dimen>
+
+    <!-- Toolbar -->
+    <dimen name="toolbar_height_phone_land">48dp</dimen>
+    <dimen name="toolbar_height_phone_port">56dp</dimen>
+    <dimen name="toolbar_height_tablet">64dp</dimen>
+
+    <!-- Navigation Drawer -->
+    <dimen name="drawer_top">24dp</dimen>
+    <dimen name="drawer_left">16dp</dimen>
+    <dimen name="drawer_right">16dp</dimen>
+    <dimen name="drawer_text_with_icon">76dp</dimen>
+    <dimen name="drawer_header_text">56dp</dimen>
+    <dimen name="drawer_grouping_padding">8dp</dimen>
+    <dimen name="drawer_item_height">48dp</dimen>
+    <dimen name="drawer_min_width_phone">320dp</dimen>
+    <dimen name="drawer_min_width_tablet">400dp</dimen>
+
+    <!-- ListView -->
+
+
+    <!-- FAB -->
+    <dimen name="fab_big">54dp</dimen>
+    <dimen name="fab_small">40dp</dimen>
+
+
+    <dimen name="activity_horizontal_margin2">16dp</dimen>
+    <dimen name="activity_vertical_margin2">16dp</dimen>
+    <dimen name="font_regular">20sp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <!--<dimen name="fab_margin">16dp</dimen>-->
+
+    <integer name="anim_duration_very_long">1500</integer>
+    <integer name="anim_duration_long">500</integer>
+    <integer name="anim_duration_medium">300</integer>
+
+    <dimen name="margin_imageview">16dp</dimen>
+    <dimen name="text_size_sender">18dp</dimen>
+    <dimen name="margin_single_sms_top">4dp</dimen>
+    <dimen name="margin_single_sms_bottom">2dp</dimen>
+    <dimen name="margin_sender">16dp</dimen>
+    <dimen name="type_box_height">55dp</dimen>
+    <dimen name="detailed_text_size">16sp</dimen>
+    <dimen name="previewMessageSize">15sp</dimen>
+    <dimen name="time_margin">8dp</dimen>
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f0f0f0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:id="@+id/lyt_food_image"
+            android:layout_gravity="center">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical">
+                <ImageView
+                    android:id="@+id/game_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:visibility="visible"
+                    android:background="@drawable/gameimage"
+                    />
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/game_image_net"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"
+                    />
+                <TextView
+                    android:id="@+id/duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="02:17"
+                    android:visibility="gone"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="@drawable/yellow_round_fill"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_gravity="bottom|left"/>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/gamename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="49ers vs. Falcons | NFL Week 15 Game Highlights"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="2dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="@color/colorPrimary"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/bar_image"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/beer"/>
+                <TextView
+                    android:id="@+id/barname"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Buffalo Wild Wings"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="2dp"
+                    android:textColor="#fa7e2a"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Team/Channel:"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:paddingLeft="5dp"
+                android:textColor="#000"
+                android:visibility="gone"
+                android:id="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/team_channel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="49ers"
+                android:textSize="13sp"
+                android:maxLines="2"
+                android:paddingLeft="5dp"
+                android:textColor="#000"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:padding="2dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/map"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/loc"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/knownname"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Colorado"
+            android:textSize="13sp"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/gamelist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4882dc"
+            android:text="Other Videos"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:padding="3dp"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:layout_gravity="right|center_vertical"
+            />
+
+    </LinearLayout>
+</LinearLayout>

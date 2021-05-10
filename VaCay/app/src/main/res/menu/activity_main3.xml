@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Gallery -->
+    <item
+        android:id="@+id/attach_setting"
+        android:title="Setting"
+        android:icon="@drawable/setting1"
+        android:showAsAction="never"
+        android:onClick="setting"
+        />
+
+    <!-- Photo -->
+    <item
+        android:id="@+id/attach_photo"
+        android:title="Profile"
+        android:icon="@drawable/profile1"
+        android:showAsAction="never"
+        android:onClick="showMyProfile" />
+
+</menu>

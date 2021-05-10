@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Gallery -->
+    <item
+        android:id="@+id/attach_gallery"
+        android:title="Message via email"
+        android:icon="@drawable/mailbox3"
+        android:showAsAction="always"
+        android:onClick="messageToInbox"
+        />
+
+    <!-- Photo -->
+    <item
+        android:id="@+id/attach_photo"
+        android:title="Talking"
+        android:icon="@drawable/messages"
+        android:showAsAction="always"
+        android:onClick="talking"
+        app:showAsAction="always" />
+
+</menu>

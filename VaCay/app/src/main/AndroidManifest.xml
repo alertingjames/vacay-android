@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mv.vacay"
+    android:installLocation="auto">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <permission
+        android:name="in.wptrafficanalyzer.locationgooglemapviewsv2.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="in.wptrafficanalyzer.locationgooglemapviewsv2.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CAPTURE_SECURE_VIDEO_OUTPUT" />
+    <uses-permission android:name="android.permission.CAPTURE_VIDEO_OUTPUT" />
+    <uses-permission android:name="com.example.permission.MAPS_RECEIVE" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+
+
+    <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".VaCayApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/vacaylogo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup,icon,theme,label">
+
+        <!-- <provider -->
+        <!-- android:name="android.support.v4.content.FileProvider" -->
+        <!-- android:authorities="dreamgo.corp.provider" -->
+        <!-- android:exported="false" -->
+        <!-- android:grantUriPermissions="true"> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.support.FILE_PROVIDER_PATHS" -->
+        <!-- android:resource="@xml/file_paths" /> -->
+        <!-- </provider> -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <provider
+            android:name=".provider.SuggestionProvider"
+            android:authorities="com.mv.vacay.provider.SuggestionProvider" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider1841543369460792"
+            android:exported="true" />
+
+        <activity
+            android:name="com.cooltechworks.creditcarddesign.CardEditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.RegisterActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/MenuTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.HomeActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".main.restaurant.FoodEntryActivity" />
+        <!-- <activity android:name=".main.RegisterActivity" /> -->
+        <activity
+            android:name=".main.SignupActivity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.ServiceProviderSignupLoginActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.restaurant.LocationSelectActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.meetfriends.MeetFriendActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.beauty.BeautyServiceActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.activity.ActionsActivity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.activity.RunningActivity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.activity.GolfActivity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.activity.TennisActivity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.SurveyQuestActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.activity.SkiingSnowboardingActivity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.meetfriends.ActionProfileActivity"
+            android:theme="@style/Theme" />
+        <activity android:name=".main.LoginRActivity" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            tools:replace="android:theme" />
+        <!-- <activity -->
+        <!-- android:name=".LoginActivity" -->
+        <!-- android:label="@string/title_activity_login"></activity> -->
+
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.gms.version" -->
+        <!-- android:value="@integer/google_play_services_version" /> -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.geo.API_KEY" -->
+        <!-- android:value="@string/google_maps_key" /> -->
+
+        <activity android:name=".main.meetfriends.MatchFriendsActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".main.location.LocationActivity"
+            android:label="@string/title_activity_location"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.meetfriends.MessageActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.meetfriends.ShowMessageActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.meetfriends.ShowUserMessageActivity"
+            android:theme="@style/Theme" />
+        <activity android:name=".main.gps.Main2Activity" />
+        <activity
+            android:name=".main.restaurant.SanFranciscoRestaurantMenuActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.meetfriends.ImageViewActivity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.restaurant.RestaurantMenuDetailActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.restaurant.DenverRestaurantMenuActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.location.LocationCaptureActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/MenuTheme" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".main.location.GooglePlacesActivity" />
+        <activity android:name=".main.location.GooglePlaces1Activity" />
+        <activity
+            android:name=".main.beauty.HairBeautyServiceActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.beauty.BlowoutActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.beauty.ManicureActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.beauty.MassageActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.beauty.WaxActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.beauty.FacialActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.manager.BeautyManagerPageActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.beauty.ViewActivity"
+            android:theme="@style/MenuTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.manager.RestaurantManagerActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.beauty.BeautyDetailActivity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.beauty.BeautyAllDetailOfCategoryActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.beauty.BeautyServiceRequestActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/MenuTheme" />
+        <activity android:name=".main.beauty.CalendarActivity" />
+        <activity
+            android:name=".main.beauty.RequestLocationActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation" />
+        <activity
+            android:name=".main.meetfriends.RequestLocationViewActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.beauty.ProviderLocationViewActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.manager.SelectLocationActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation" />
+        <activity
+            android:name=".main.beauty.BeautyLocationSelectActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/MenuTheme" />
+        <!-- <item name="android:windowFullscreen">true</item> -->
+        <activity
+            android:name=".main.MyProfileActivity"
+            android:theme="@style/Theme" />
+        <activity android:name=".main.SurveyAnswerViewActivity" />
+        <activity android:name=".main.meetfriends.FriendSurveyAnswerViewActivity" />
+        <activity
+            android:name=".main.MyLocationViewActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.beauty.Payment1Activity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.linkedin.LoginLinkedin"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.linkedin.LinkedinActivity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.linkedin.UserProfile"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.restaurant.NewYorkRestaurantMenuActivity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.restaurant.ChicagoRestaurantMenuActivity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.beauty.BeautyProviderPhotoActivity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.SelectDateTimeActivity"
+            android:theme="@style/MenuTheme" />
+        <activity android:name=".main.CheckinActivity" />
+        <activity android:name=".main.CheckinlistActivity" />
+        <activity
+            android:name=".main.carpediem.SelectCarpeDiemActivity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.carpediem.GameEntryListActivity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.carpediem.GameDetailActivity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.carpediem.BarCheckinViewActivity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.carpediem.GameListActivity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.carpediem.VideoDisplayActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.carpediem.TakePhotoActivity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.carpediem.PostCommentActivity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.carpediem.VideoPlayListActivity"
+            android:label="All Videos List" />
+        <activity android:name=".main.carpediem.EntertainmentEntryActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name=".main.youtubesearch.NoInternetActivity" />
+        <activity android:name=".main.movies.VideoDetail" />
+        <activity android:name=".main.movies.MoviesActivity" />
+        <activity android:name=".main.manager.VendorUploadActivity" />
+        <activity android:name=".main.manager.VideoListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name=".main.manager.UploadCheckInActivity" />
+        <activity android:name=".main.manager.GoogleSearchActivity" />
+        <activity android:name=".main.news.NewsActivity" />
+        <activity android:name=".main.movies.DownLoadActivity" />
+        <activity android:name=".login.VirtualLoginActivity" />
+        <activity android:name=".login.VirtualSignupActivity" />
+        <activity
+            android:name=".main.manager.VideoCaptureActivity"
+            android:theme="@style/MenuTheme" />
+        <activity android:name=".main.video.VideoCompressActivity" />
+
+        <service android:name=".main.fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".main.fcm.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".main.carpediem.VideoDisplayTestActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.inbox.InboxActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.inbox.SelectRecieverActivity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.inbox.UserProfileActivity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.weather.MmainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.weather.SettingsActivity"
+            android:theme="@style/AppTheme" />
+
+        <receiver android:name=".widgets.ExtensiveWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/extensive_widget" />
+        </receiver>
+        <receiver android:name=".widgets.TimeWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/time_widget" />
+        </receiver>
+
+        <service
+            android:name=".widgets.DashClockWeatherExtension"
+            android:icon="@drawable/ic_cloud_white_24dp"
+            android:label="@string/app_name"
+            android:permission="com.google.android.apps.dashclock.permission.READ_EXTENSION_DATA">
+            <intent-filter>
+                <action android:name="com.google.android.apps.dashclock.Extension" />
+            </intent-filter>
+
+            <meta-data
+                android:name="protocolVersion"
+                android:value="2" />
+            <meta-data
+                android:name="worldReadable"
+                android:value="true" />
+            <meta-data
+                android:name="settingsActivity"
+                android:value=".ExampleSettingsActivity" />
+        </service>
+
+        <receiver android:name=".main.weather.AlarmReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".main.weather.MapActivity"
+            android:parentActivityName=".main.weather.MmainActivity"
+            android:theme="@style/AppTheme.NoStatusBar" />
+        <activity
+            android:name=".main.weather.GraphActivity"
+            android:label="@string/action_graphs"
+            android:parentActivityName=".main.weather.MmainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".main.ResultActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".main.provider.ProviderHomeActivity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.beauty.BeautyWelcomeActivity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.beautymen.MenBeautyServiceActivity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.beauty.MakeoverActivity"
+            android:theme="@style/MenuTheme" />
+        <activity android:name=".main.beautymen.MenBeautyLocationSelectActivity" />
+        <activity
+            android:name=".main.beautymen.MenHairActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.beautymen.HotShaveActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.beautymen.MenManicureActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.beautymen.MenMassageActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.beautymen.MenFacialActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.beautymen.MenWaxActivity"
+            android:theme="@style/MenuTheme" />
+        <activity android:name=".main.beautymen.NewBeautyViewActivity" />
+        <activity android:name=".main.beautymen.NewProviderLocationViewActivity" />
+        <activity
+            android:name=".main.beautymen.ProductDetailActivity"
+            android:theme="@style/MenuTheme" />
+        <activity android:name=".main.beautymen.ProductLocationViewActivity" />
+        <activity
+            android:name=".main.beautymen.ProductListActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.beautymen.RequestLocationActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.beauty.BeautyServiceEntryActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.beautymen.NewBeautyServiceDetailActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.beautymen.RequestBeautyActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.beautymen.BeautyListActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.meetfriends.SpeechMessageActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.payment.VerifyPaymentActivity"
+            android:theme="@style/MenuTheme" />
+        <activity android:name=".main.payment.CollectionActivity" />
+        <activity
+            android:name="com.paypal.android.MEP.PayPalActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity android:name=".main.payment.PayPalPaymentActivity" />
+        <activity android:name=".main.MyCurrentLocationViewActivity" />
+        <activity
+            android:name=".main.provider.SProviderHomeActivity"
+            android:theme="@style/Theme" />
+        <activity android:name=".main.provider.SProviderLocationViewActivity" />
+        <activity
+            android:name=".main.provider.CalendarActivity"
+            android:theme="@style/MenuTheme" />
+        <activity android:name=".main.provider.ProviderProductListActivity" />
+        <activity android:name=".main.provider.ProviderProductDetailActivity" />
+        <activity
+            android:name=".main.provider.BroadmoorActivity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.provider.BroadmoorProductDetailActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.activity.BroadmoorProductPageActivity"
+            android:theme="@style/Theme" />
+        <activity android:name=".main.activity.BroadmoorProductPictureViewActivity" />
+        <activity
+            android:name=".main.provider.CompanyManagerActivity"
+            android:theme="@style/Theme" />
+        <activity
+            android:name=".main.provider.JobDetailActivity"
+            android:theme="@style/MenuTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/pdf" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.provider.AnnouncementDetailActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.JobListActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.AnnouncementListActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.provider.SignedEmployeesViewActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.provider.WebPageActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.provider.EmployeeSendMailActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.provider.ScreenshotActivity"
+            android:theme="@style/MenuTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.meetfriends.ChatActivity"
+            android:theme="@style/MenuTheme" />
+        <activity android:name=".notification.FindNotiUserActivity" />
+        <activity
+            android:name=".main.meetfriends.TalkLocationCaptureActivity"
+            android:theme="@style/MenuTheme" />
+        <activity android:name=".main.meetfriends.TalkLocationViewActivity" />
+        <activity android:name=".main.ChatListActivity" />
+        <activity android:name=".main.ChatHistoryActivity" />
+        <activity android:name=".main.meetfriends.VideoPlayActivity" />
+        <activity
+            android:name=".nearby.PlaceResult"
+            android:label="Places"
+            android:parentActivityName=".nearby.PlacesMain" />
+        <activity
+            android:name=".nearby.PlacesMain"
+            android:label="Places" />
+        <activity android:name=".nearby.Search" />
+        <activity
+            android:name=".nearby.Splash"
+            android:label="Nearby" />
+        <activity
+            android:name=".PlaceDetail.PlaceDetail"
+            android:label="@string/title_activity_places" />
+        <activity android:name=".PlaceDetail.PlaceDetailOnMapActivity" />
+        <activity android:name=".nearby.PlacesOnMapActivity" />
+        <activity
+            android:name=".sms.SendSMSActivity"
+            android:theme="@style/Theme.AppCompat">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".sms.NewSMSActivity"
+            android:theme="@style/Theme.AppCompat">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SENDTO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="SMS"
+                    tools:ignore="AppLinkUrlError" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".receivers.SmsReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <action android:name="android.provider.Telephony.SMS_DELIVER" />
+            </intent-filter>
+        </receiver>
+
+        <!-- BroadcastReceiver that listens for incoming MMS messages -->
+        <receiver
+            android:name=".receivers.MmsReceiver"
+            android:permission="android.permission.BROADCAST_WAP_PUSH">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.WAP_PUSH_DELIVER" />
+
+                <data android:mimeType="application/vnd.wap.mms-message" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Service that delivers messages from the phone "quick response" -->
+        <service
+            android:name=".services.HeadlessSmsSendService"
+            android:exported="true"
+            android:permission="android.permission.SEND_RESPOND_VIA_MESSAGE">
+            <intent-filter>
+                <action android:name="android.intent.action.RESPOND_VIA_MESSAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="SMS" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.SaveSmsService"
+            android:exported="false" />
+
+        <activity
+            android:name=".sms.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/Theme.AppCompat" />
+
+        <service android:name=".services.UpdateSMSService" />
+
+        <activity
+            android:name=".sms.SmsDetailedView"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".main.beautymen.BookingResponseActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.beautymen.BookingActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.provider.GoogleSurveyActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.activity.BikingActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.activity.FishingActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.activity.SurfingActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.activity.ExploringActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.MediaActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.VideoMediaPlayActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.JobMediaActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.watercooler.WatercoolerSetupActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.watercooler.WatercoolerViewActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.info.CommonInfoViewActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.info.CommonInfoSetupActivity"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".main.weather.WeatherActivity"
+            android:theme="@style/MenuTheme" />
+        <activity android:name=".main.watercooler.CommentActivity" />
+        <activity android:name=".main.watercooler.AddCommentActivity"
+            android:screenOrientation="fullSensor"/>
+    </application>
+
+</manifest>

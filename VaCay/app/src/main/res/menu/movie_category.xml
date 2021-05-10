@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/romantic"
+        android:title="Romantic"
+        android:icon="@drawable/romantici"
+        android:showAsAction="always"
+        android:onClick="romantic"
+        />
+
+    <item
+        android:id="@+id/comedy"
+        android:title="Comedy"
+        android:icon="@drawable/comedyi"
+        android:showAsAction="always"
+        android:onClick="comedy"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/horror"
+        android:title="Horror"
+        android:icon="@drawable/horrori"
+        android:showAsAction="always"
+        android:onClick="horror"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/drama"
+        android:title="Drama"
+        android:icon="@drawable/dramai"
+        android:showAsAction="always"
+        android:onClick="drama"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/cancel"
+        android:title="@string/cancel"
+        android:showAsAction="always"
+        android:onClick="cancel"
+        app:showAsAction="always"
+        android:icon="@drawable/back1"/>
+
+</menu>

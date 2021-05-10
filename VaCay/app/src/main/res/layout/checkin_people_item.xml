@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="@drawable/profile_fillrect">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_gravity="center_vertical">
+            <com.mv.vacay.utils.CircularImageView
+                android:id="@+id/imv_photo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/photo"
+                android:scaleType="centerCrop"/>
+            <com.mv.vacay.utils.CircularNetworkImageView
+                android:id="@+id/imv_photo_net"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:background="@drawable/photo"
+                android:scaleType="centerCrop"/>
+            <ImageView
+                android:id="@+id/message_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/circle2"
+                android:layout_gravity="bottom|right"
+                android:visibility="invisible"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"/>
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="1dp"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/txv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Scott Nash"
+                        android:layout_marginLeft="8dp"
+                        android:textStyle="bold"
+                        android:textSize="10sp"/>
+                    <!--<TextView-->
+                        <!--android:id="@+id/txv_job"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="#000"-->
+                        <!--android:drawablePadding="5dp"-->
+                        <!--android:singleLine="false"-->
+                        <!--android:drawableLeft="@drawable/dot"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingLeft="5dp"-->
+                        <!--android:textSize="11sp"-->
+                        <!--android:layout_marginTop="2dp"-->
+                        <!--android:layout_marginBottom="5dp"-->
+                        <!--android:text="PWC"/>-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:id="@+id/txv_age_range"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:singleLine="false"
+                            android:drawableLeft="@drawable/dot"
+                            android:drawablePadding="5dp"
+                            android:gravity="center_vertical"
+                            android:textSize="8sp"
+                            android:layout_marginTop="1dp"
+                            android:text="25"
+                            />
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/txv_city"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="#000"-->
+                            <!--android:drawablePadding="5dp"-->
+                            <!--android:drawableLeft="@drawable/dot"-->
+                            <!--android:gravity="center_vertical"-->
+                            <!--android:singleLine="false"-->
+                            <!--android:textSize="11sp"-->
+                            <!--android:layout_marginTop="2dp"-->
+                            <!--android:text="NYC"/>-->
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/txv_relationship"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:singleLine="false"
+                            android:drawablePadding="5dp"
+                            android:drawableLeft="@drawable/dot"
+                            android:gravity="center_vertical"
+                            android:textSize="8sp"
+                            android:layout_marginTop="1dp"
+                            android:text="In Relationship"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/txv_education"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:textColor="#000"-->
+                                <!--android:singleLine="false"-->
+                                <!--android:drawablePadding="5dp"-->
+                                <!--android:drawableLeft="@drawable/dot"-->
+                                <!--android:gravity="center_vertical"-->
+                                <!--android:textSize="11sp"-->
+                                <!--android:layout_marginTop="2dp"-->
+                                <!--android:text="NYU, UCLA"/>-->
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

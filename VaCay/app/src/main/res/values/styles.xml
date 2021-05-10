@@ -1,0 +1,192 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+
+    <style name="Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="MyTheme" parent="android:Theme.Holo.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:textColorPrimary">#000</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="menu_labels_style">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="menu_labels_style1">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@color/transparent</item>
+        <item name="android:bottomDark">@color/transparent</item>
+        <item name="android:bottomMedium">@color/transparent</item>
+        <item name="android:centerBright">@color/transparent</item>
+        <item name="android:centerDark">@color/transparent</item>
+        <item name="android:centerMedium">@color/transparent</item>
+        <item name="android:fullBright">@color/transparent</item>
+        <item name="android:fullDark">@color/transparent</item>
+        <item name="android:topBright">@color/transparent</item>
+        <item name="android:topDark">@color/transparent</item>
+    </style>
+
+    <style name="MenuTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowFullscreen">false</item>
+        <!--<item name="android:textSize">12sp</item>-->
+        <item name="android:textColor">#0b6923</item>
+    </style>
+
+
+    <style name="ActionBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>
+    </style>
+    <style name="MyActionButtonOverflow" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/sendbird_btn_setting</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!--<style name="OverlayActionBarTheme" parent="android:Theme.Holo">-->
+        <!--<item name="android:windowActionBarOverlay">true</item>-->
+    <!--</style>-->
+    <style name="AppTheme.Dark" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/darkTheme_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/darkTheme_colorPrimaryDark</item>
+        <item name="colorAccent">@color/darkTheme_colorAccent</item>
+        <item name="colorBackground">@color/darkTheme_colorBackground</item>
+        <item name="colorTintedBackground">@color/darkTheme_colorTintedBackground</item>
+    </style>
+
+    <style name="AppTheme.Classic" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/classic_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/classic_colorPrimaryDark</item>
+        <item name="colorAccent">@color/classic_colorAccent</item>
+        <item name="colorBackground">@color/classic_colorBackground</item>
+        <item name="colorTintedBackground">@color/classic_colorTintedBackground</item>
+    </style>
+    <style name="AppTheme.Classic.Dark" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/classic_darkTheme_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/classic_darkTheme_colorPrimaryDark</item>
+        <item name="colorAccent">@color/classic_darkTheme_colorAccent</item>
+        <item name="colorBackground">@color/classic_darkTheme_colorBackground</item>
+        <item name="colorTintedBackground">@color/classic_darkTheme_colorTintedBackground</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.NoStatusBar" parent="AppTheme.NoActionBar"></style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Classic" parent="AppTheme.Classic">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark" parent="AppTheme.Dark">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Classic.Dark" parent="AppTheme.Classic.Dark">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay.Dark" parent="ThemeOverlay.AppCompat" />
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--<item name="actionBarStyle">@style/ActionBar.Solid.AppStyle</item>-->
+    <!--</style>-->
+
+    <!--<style name="Theme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--<item name="actionBarStyle">@style/ActionBar.Solid.AppStyle</item>-->
+    <!--</style>-->
+
+    <style name="ActionBar.Solid.AppStyle" parent="Base.Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="background">@color/colorPrimary</item>
+    </style>
+
+    <style name="App_EditTextStyle">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="ButtonTheme" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ToolBarWithNavigationBack">
+        <item name="navigationIcon">@drawable/abc_ic_ab_back_material</item>
+    </style>
+
+    <style name="DialogTheme">
+        <item name="android:windowEnterAnimation">@anim/custom</item>
+        <item name="android:windowExitAnimation">@anim/fade_off</item>
+    </style>
+    <style name="DialogTheme2">
+        <item name="android:windowEnterAnimation">@anim/scale</item>
+        <item name="android:windowExitAnimation">@anim/right_out</item>
+    </style>
+    <style name="DialogTheme3">
+        <item name="android:windowEnterAnimation">@anim/fade</item>
+        <item name="android:windowExitAnimation">@anim/right_out</item>
+    </style>
+
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- <ImageView
+         android:layout_marginTop="20dp"
+         android:layout_gravity="center"
+         android:id="@+id/image_profile"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+
+     <TextView
+         android:textStyle="bold"
+         android:layout_marginTop="20dp"
+         android:id="@+id/text_name"
+         android:hint="Name:"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+
+
+     <TextView
+         android:textStyle="bold"
+         android:layout_marginTop="20dp"
+         android:id="@+id/text_email"
+         android:hint="Email:"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+
+     <Button
+         android:onClick="logout"
+         android:layout_marginTop="20dp"
+         android:textColor="#ffffff"
+         android:background="@color/blue_linkdin"
+         android:id="@+id/button_logout"
+         android:text="Logout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />-->
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/activity_profile_welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:onClick="logout"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:background="@color/blue_linkdin"
+        android:id="@+id/button_logout"
+        android:text="Logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Gallery -->
+    <item
+        android:id="@+id/participants"
+        android:title="Participants"
+        android:icon="@drawable/profile0"
+        android:showAsAction="always"
+        android:onClick="participantsView"
+        />
+
+    <!-- Photo -->
+    <item
+        android:id="@+id/blocked_users"
+        android:title="Blocked Users"
+        android:icon="@drawable/images10"
+        android:showAsAction="always"
+        android:onClick="blockedUsersView"
+        app:showAsAction="always" />
+
+</menu>

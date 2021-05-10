@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp">
+            <com.mv.vacay.utils.CircularImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/sender_photo"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:background="@drawable/photo"/>
+            <com.mv.vacay.utils.CircularNetworkImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/sender_photo_net"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:background="@drawable/photo"/>
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="0px"
+                    android:layout_weight="0.6"
+                    android:layout_height="wrap_content"
+                    android:text="Cayley W."
+                    android:textColor="#417f71"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:gravity="left"/>
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_weight="0.1"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#000"
+                    android:gravity="right"/>
+                <TextView
+                    android:id="@+id/view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VIEW >"
+                    android:textColor="#0a0a09"
+                    android:visibility="visible"
+                    android:paddingLeft="5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="0px"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text="cayleywetzig@gmail.com"
+                    android:textColor="#457dd6"
+                    android:gravity="left"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/datetime"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="Request: "/>
+                <TextView
+                    android:id="@+id/request_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="October 9,2017 10:50"
+                    android:textColor="#f47d52"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    android:paddingLeft="5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Service: "/>
+                <TextView
+                    android:id="@+id/service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Makeover: Seasonal Trends"
+                    android:textColor="#d7021fff"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    android:paddingLeft="5dp"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="italic"
+                android:visibility="gone"
+                android:textColor="#ff02f6"
+                android:gravity="center"
+                android:padding="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/buttonBar"
+        android:visibility="visible"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/decline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DECLINE"
+            android:background="@drawable/blue_thin_stroke"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textStyle="bold"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACCEPT"
+            android:background="@drawable/green_fillround"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_marginLeft="60dp"
+            android:textSize="12sp"/>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

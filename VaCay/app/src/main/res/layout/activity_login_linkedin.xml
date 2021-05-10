@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<TextView-->
+         <!--android:layout_marginTop="10dp"-->
+         <!--android:text="Linkedin"-->
+         <!--android:layout_width="wrap_content"-->
+         <!--android:layout_height="wrap_content" />-->
+
+
+
+     <!--<LinearLayout-->
+         <!--android:layout_width="match_parent"-->
+         <!--android:layout_height="wrap_content"-->
+         <!--android:orientation="vertical">-->
+
+         <!--<LinearLayout-->
+             <!--android:layout_width="match_parent"-->
+             <!--android:layout_height="wrap_content"-->
+             <!--android:orientation="vertical"-->
+             <!--android:padding="16dp"-->
+             <!--android:background="@color/grey_background"-->
+             <!--android:gravity="center">-->
+
+             <!--<Button-->
+                 <!--android:onClick="loginLinkedin"-->
+                 <!--android:id="@+id/btGetInLinkdin"-->
+                 <!--android:layout_width="match_parent"-->
+                 <!--android:layout_height="wrap_content"-->
+                 <!--android:background="@drawable/corner_linkdin_3dp"-->
+                 <!--android:drawableLeft="@drawable/ic_icon_linkedin_white"-->
+                 <!--android:text="@string/entrar_com_linkedin"-->
+                 <!--android:paddingLeft="16dp"-->
+                 <!--android:layout_marginTop="20dp"-->
+                 <!--android:textColor="@color/white"-->
+                 <!--android:textStyle="bold"/>-->
+
+
+             <!--<TextView-->
+                 <!--android:id="@+id/hashKey2"-->
+                 <!--android:layout_marginTop="10dp"-->
+                 <!--android:hint="HASHKEY linkedin"-->
+                 <!--android:layout_width="wrap_content"-->
+                 <!--android:layout_height="wrap_content" />-->
+
+
+             <!--<Button-->
+                 <!--android:onClick="btnHash"-->
+                 <!--android:layout_marginTop="10dp"-->
+                 <!--android:text="setar hashkey"-->
+                 <!--android:layout_width="wrap_content"-->
+                 <!--android:layout_height="wrap_content" />-->
+
+             <!--</LinearLayout>-->
+         <!--</LinearLayout>-->
+
+
+
+    <WebView
+        android:id="@+id/main_activity_web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

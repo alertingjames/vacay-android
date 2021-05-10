@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_request"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundregister2"
+    tools:context=".main.beautymen.BookingResponseActivity">
+    <View
+        android:id="@+id/background"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#81646464"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Customer's Booking Request Detail"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:textSize="18sp"
+            android:textColor="#fff"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:id="@+id/scrollView"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp">
+                        <com.mv.vacay.utils.CircularImageView
+                            android:id="@+id/photo"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="5dp"
+                            android:background="@drawable/photo"/>
+                        <com.mv.vacay.utils.CircularNetworkImageView
+                            android:id="@+id/photo_net"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="5dp"
+                            android:visibility="gone"
+                            android:background="@drawable/photo"/>
+                    </FrameLayout>
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="0px"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="#fff"
+                        android:hint="User Name"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="#fff"
+                    android:hint="User Email"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:text="Customer's Booking Request"
+                        android:textSize="13sp"
+                        android:textStyle="italic"/>
+                    <ImageView
+                        android:id="@+id/locationButton"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/loc"
+                        android:onClick="viewRequestLocation"
+                        android:layout_marginLeft="30dp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/requestBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_roundrect"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000"
+                    android:gravity="start"
+                    android:hint="Customer's Booking Request"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/phoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="#fff"
+                    android:hint="Phone Number"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/schedule"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:onClick="showMySchedule"
+                            android:background="@drawable/login_roundrect"
+                            android:src="@drawable/th"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="3dp"
+                            android:textColor="#fff"
+                            android:textSize="13sp"
+                            android:text="Schedule"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="50dp">
+                        <ImageView
+                            android:id="@+id/changeDateTime"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:onClick="selectDateTime"
+                            android:background="@drawable/datetime"/>
+                        <TextView
+                            android:id="@+id/selectedDateTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="3dp"
+                            android:textColor="#fff"
+                            android:textSize="13sp"
+                            android:text="Select Other"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+                    <TextView
+                        android:id="@+id/decline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="DECLINE"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:background="@drawable/light_green_thin_stroke"/>
+                    <TextView
+                        android:id="@+id/accept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="ACCEPT"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/blue_fill_white_stroke"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="OR"
+                    android:textSize="13sp"
+                    android:textStyle="italic"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/smsButton"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/smsicon"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:visibility="visible"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:onClick="sendSMS"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:id="@+id/chatButton"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/messages"
+                        android:layout_marginLeft="30dp"
+                        android:visibility="visible"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:onClick="talking"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/timeListContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/login_roundrect">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/calendarbackground">
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/login_roundrect">
+            </ListView>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/cancel"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right"
+                android:src="@drawable/cancel_icon"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

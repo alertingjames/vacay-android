@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_web_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fotolia"
+    tools:context="com.mv.vacay.main.provider.WebPageActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/editPage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#020202"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:singleLine="false"
+                    android:text="You can copy and paste your necessary info\nfor the post!"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="2dp">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/logo"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:background="@drawable/broadmooricon"
+                            android:scaleType="centerCrop"
+                            android:visibility="visible" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:singleLine="false"
+                                    android:text="Company"
+                                    android:textColor="#0275ff"
+                                    android:textSize="11sp"
+                                    android:textStyle="italic" />
+
+                                <EditText
+                                    android:id="@+id/company"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:singleLine="false"
+                                    android:text="Company"
+                                    android:textColor="#b302147b"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:gravity="center_vertical"
+                                    android:singleLine="false"
+                                    android:text="Job Name"
+                                    android:textColor="#0275ff"
+                                    android:textSize="11sp"
+                                    android:textStyle="italic" />
+
+                                <EditText
+                                    android:id="@+id/name1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:padding="5dp"
+                                    android:singleLine="false"
+                                    android:text="Job Name"
+                                    android:textColor="#000"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#919191" />
+
+            <ScrollView
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:singleLine="false"
+                                android:text="Req ID"
+                                android:textColor="#0275ff"
+                                android:textSize="11sp"
+                                android:textStyle="italic" />
+
+                            <EditText
+                                android:id="@+id/reqId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_vertical"
+                                android:singleLine="false"
+                                android:text="REQ10109832"
+                                android:textColor="#fb7820"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="0px"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:singleLine="false"
+                            android:text="Posting Date"
+                            android:textColor="#0275ff"
+                            android:textSize="11sp"
+                            android:textStyle="italic" />
+
+                        <EditText
+                            android:id="@+id/postDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="3dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingTop="3dp"
+                            android:singleLine="false"
+                            android:text="4/9/2017"
+                            android:textColor="#1a1a19"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_vertical"
+                            android:singleLine="false"
+                            android:text="Department"
+                            android:textColor="#0275ff"
+                            android:textSize="11sp"
+                            android:textStyle="italic" />
+
+                        <EditText
+                            android:id="@+id/department"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_vertical"
+                            android:singleLine="false"
+                            android:text="Sales &amp; Marketing"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:drawableLeft="@drawable/markersmall1"
+                            android:drawablePadding="5dp"
+                            android:gravity="center_vertical"
+                            android:singleLine="false"
+                            android:text="Location"
+                            android:textColor="#0275ff"
+                            android:textSize="11sp"
+                            android:textStyle="italic" />
+
+                        <EditText
+                            android:id="@+id/location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="#1ea862"
+                            android:gravity="center_vertical"
+                            android:padding="6dp"
+                            android:singleLine="false"
+                            android:text="Costa Rica Satellite Sales located in South Florida"
+                            android:textColor="#fff"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:gravity="center_vertical"
+                                android:singleLine="false"
+                                android:text="Description"
+                                android:textColor="#0275ff"
+                                android:textSize="11sp"
+                                android:textStyle="italic" />
+
+                            <EditText
+                                android:id="@+id/description"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:autoLink="web"
+                                android:gravity="center_vertical"
+                                android:padding="5dp"
+                                android:singleLine="false"
+                                android:text="Four Seasons Resort Costa Rica is looking for Director of Marketing, who shares passion for excellence and to provide excitement in everything you do. In this position you will direct and oversee all marketing activities with the support of teams including, Sales, Catering, Conference Services, Public Relations and Revenue Management for the Hotel and ensure that all activities and bookings are focused to yield maximum revenue per room occupied.      About us:      We are a Forbes 5 star hotel, the only one in Central and South America. We are known to be an inclusive company and provide equal opportunities for our candid      Requirements:         Education: 3 year university/college degree (or equivalent)         Experience: 3 – 5 years of employment in a related position         Skills and Abilities: Requires strong revenue and budget management skills Travel required: Regular Hours required: Scheduled days and times may vary based on need      We expect from you :          Recruit, select and familiarize marketing department personnel with the Hotel and their functions. Train and guide marketing department personnel in the performance of their duties as to specific position responsibilities, performance techniques, reporting procedures, etc. Conduct performance evaluations and follow up with marketing department personnel.         The ability to build a positive working environment.         Implement activities that positively impact hotel Rev Par performance The ability to reposition and re launch the resort after renovation         Review and monitor competitive hotels so as to formulate recommendations on product and service enhancements to remain competitive         Identify sources of business available to the hotel and establish priority marketing opportunities in the solicitation of that business. Develop and implement the Annual Marketing Plan.         Maintain a cooperative working relationship with other departments particularly those with mutual guest contact. Develop special promotional programs to stimulate trial and generate revenue. Develop the advertising and business promotion budget in conjunction with the Annual Marketing Plan. A Team Player and have interpersonal sensitivity.      You can expect:          Participation in a team of professionals in luxury hotel industry Excellent working environment          Access to an attractive benefits package Performance reviews Goals Settings Continuous development and learning opportunities          Complementary nights in Four Seasons Hotels and Resorts worldwide      Learn more about us:      jobs.fourseasons.com/CostaRica The management level for this position is: Operations - Division Head      The Location for this position is:      Remote: Miramar Offices at 3350 SW 148th Ave Suite 204, Miramar, FL 33027  Four Seasons is an Equal Opportunity, Affirmative Action employer. Minorities, women, veterans, and individuals with disabilities are encouraged to apply.  To access the 'EEOC is The Law'  Information poster please visit this website - http://www.eeoc.gov/employers/upload/poster_screen_reader_optimized.pdf"
+                                android:textColor="#000"
+                                android:textSize="16sp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="3dp"
+                                android:layout_marginTop="8dp"
+                                android:background="#919191" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:gravity="center_vertical"
+                                android:singleLine="false"
+                                android:text="Extra"
+                                android:textColor="#0275ff"
+                                android:textSize="11sp"
+                                android:textStyle="italic" />
+
+                            <EditText
+                                android:id="@+id/empty"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:gravity="center_vertical"
+                                android:singleLine="false"
+                                android:text="$150,000 Annually"
+                                android:textColor="#000"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="0px"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/facebooksharebutton"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/facebookicon" />
+
+                            <TextView
+                                android:layout_width="0px"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/linkedinsharebutton"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/linkedinicon" />
+
+                            <TextView
+                                android:layout_width="0px"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/twittersharebutton"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/twittericon" />
+
+                            <TextView
+                                android:layout_width="0px"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/indeedbutton"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/indeedicon" />
+
+                            <TextView
+                                android:layout_width="0px"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5" />
+
+                            <TextView
+                                android:id="@+id/shareButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/black_fill_rect"
+                                android:drawablePadding="5dp"
+                                android:drawableRight="@drawable/share_gold"
+                                android:gravity="center"
+                                android:paddingBottom="8dp"
+                                android:paddingLeft="12dp"
+                                android:paddingRight="12dp"
+                                android:paddingTop="8dp"
+                                android:text="Share"
+                                android:textColor="#fffd8c"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/myPage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"></WebView>
+
+        <ImageView
+            android:id="@+id/show"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/light_blue_fill_round"
+            android:padding="5dp"
+            android:src="@drawable/show2"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

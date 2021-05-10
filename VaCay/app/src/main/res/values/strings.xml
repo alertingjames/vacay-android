@@ -1,0 +1,557 @@
+<resources>
+    <string name="app_name">VaCay Carpe Diem</string>
+
+    <string name="app_package">VaCay Carpe Diem</string>
+
+    <string name="paypal_client_id">AexEJ3-oVFtiToF6YcrYWNCUDgbiJi84VaT4pqjShl1v1BBRbnxq8JTo3Ncz3b1RiK8yIQtaRfJtFZT4</string>
+    <string name="sandbox_account_email">cayleywetzig-facilitator@gmail.com</string>
+    <string name="secret">EKLwWtG7mWiX6r81kIYRld_9L8CDZb5m0SwvcMx2O6jTc6SPOPnbvWQS8dbkEYsVjJPLKet6nThh_WAM</string>
+
+    <string name="entrar_com_linkedin">Entrar com Linkedin</string>
+    <string name="loading">loading...</string>
+    <string name="welcome_text">teste</string>
+    <string name="buy_product"><u><i><b>Buy Products</b></i></u></string>
+
+    <string name="carmode_description">Car Mode? Click on the car to turn it on. You can speak messages, hear responses &amp; send recorded messages.\n\n Say \"<b>NEW</b>\" to initiate a new message. Say \"<b>SEND</b>\" to send it.</string>
+
+    <string name="codeversed_logo">Codeversed Logo</string>
+    <string name="normal">Normal</string>
+    <string name="big_text_style">Big Text Style</string>
+    <string name="big_picture_style">Big Picture Style</string>
+    <string name="inbox_style">Inbox Style</string>
+    <string name="custom_view">Custom View</string>
+    <string name="error_opening_url">Error opening link</string>
+
+    <string name="title_activity_share">Share</string>
+    <string name="product_description">Dry, lifeless hair? Change it. Revive it. Experience the power of L’Oréal Paris Extraordinary Oil with Oil Complex – Coconut, Argan, Chamomile, Amla, Soja, and Sunflower. Deep nourishment without the weight for incredibly lustrous, touchably soft hair.
+AQUA / WATER / EAU, SODIUM LAURETH SULFATE, COCO-BETAINE, LAURETH-5 CARBOXYLIC ACID, COCAMIDE MIPA, SODIUM CHLORIDE, ISOSTEARYL, NEOPENTANOATE, PARFUM / FRAGRANCE, POLYQUATERNIUM-10, AMODIMETHICONE, SODIUM BENZOATE, HEXYLENE GLYCOL, PEG-55 PROPYLENE GLYCOL OLEATE, PROPYLENE GLYCOL, PEG-60 HYDROGENATED CASTOR OIL, SALICYLIC ACID, CAPRYLIC/CAPRIC TRIGLYCERIDE, SODIUM HYDROXIDE, ARGININE</string>
+
+    <string name="title_activity_data">Data</string>
+    <string name="title_activity_chart">Chart</string>
+    <string name="title_activity_summary">Summary</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel"><i>Cancel</i></string>
+    <string name="ok_update">OK <![CDATA[&]]> UPDATE</string>
+    <string name="neckbackmassage">Neck <![CDATA[&]]> Back Massage</string>
+    <string name="error">Connecting to the server failed.\nPlease try again.</string>
+    <string name="chatting_error">The connection to the chat server has been shut down.</string>
+    <string name="chatting_success">It was connected to the chat server.</string>
+    <string name="chatting_connecting">It is being connected to the chat server.</string>
+    <string name="email_exist">This email already exists so you are updating your profile.</string>
+    <string name="connect_success">Successfully registered to server.</string>
+    <string name="invalidEmail">Please enter a valid email address.</string>
+    <string name="not_authenticate">E-mail has not been certified.</string>
+    <string name="photo_upload_fail">Picture registration failed.</string>
+    <string name="please_notice">The video selected is first copied to the Temp directory, then is compressed and moved to the Compressed Videos directory and finally the Temp directory is empty.</string>
+    <string name="photo_upload_success">The uploaded file was successful.</string>
+    <string name="unregistered_user">Unregistered user.</string>
+    <string name="wrong_auth">Please input verification code correctly.</string>
+    <string name="register_fail">Registration failed.\nTry again later.</string>
+    <string name="checkPwd">Please enter the password correctly.</string>
+    <string name="update_success">Succeed to update profile.</string>
+
+    <string name="skiing_snowboarding">Ski <![CDATA[&]]> Snowboard</string>
+    <string name="skiing_snowboarding_with">Ski <![CDATA[&]]>\nSnowboard\n with :</string>
+    <string name="welcome">Welcome! Please connect both your LinkedIn <![CDATA[&]]> Facebook accounts for our security standards.</string>
+    <string name="welcome_login">Welcome! Please write your profile contents correctly based on your LinkedIn <![CDATA[&]]> Facebook accounts for our security standards.</string>
+    <string name="title_activity_login">VaCay</string>
+    <string name="facebook_app_id">1841543369460792</string>
+    <string name="survey">TELL US ABOUT YOURSELF.\nWhy are you joining VaCay? \n(Click on any boxes that apply)</string>
+    <string name="questa">I’ve relocated offices and looking to meet new friends.</string>
+    <string name="questb">Haven’t relocated but want to make new work friends.</string>
+    <string name="questc">I travel a lot for work and want to meet colleagues in other offices that want to grab dinner at the top restaurants.</string>
+    <string name="questdd">I’m looking for colleagues that want to do the same activities as me.</string>
+
+    <string name="questbb">Want to make new friends.</string>
+    <string name="questcc">I want to make new Foodie Friends.</string>
+    <string name="questddd">I want to make friends that like the same activities as I do.</string>
+
+    <string name="queste">I’m busy and want my pampering to come to me or my hotel.</string>
+    <string name="messagefromfriend">Hi James, here are the uploaded screens with the previous ones.Please let me know what do you think about the icons.I made the notes about some.Thanks and let me know a good time to talk tomorrow.Thanks again. </string>
+    <string name="messagefromfriendB">How do you do? I have read your description and felt so desire to develop your project. I am Android/iOS developer and expert of Mobile area. I hope you not to regret about me. Looking forward to your glad reply. Best regards.</string>
+    <string name="hint">Please review the service provider below, price <![CDATA[&]]> type of service</string>
+    <string name="hint1">Click here for view</string>
+    <string name="beautydescription">If you’d like to select me, please click on the “Request” box below. I will then ask you where you want me to come to give you this service.</string>
+    <!-- Strings related to login -->
+    <string name="address0">1722 Sacramento St, San Francisco, CA 94109</string>
+    <string name="address1">800 North Point St, San Francisco, CA 94109</string>
+
+    <string name="golfint"><b><u>Golf</u></b></string>
+    <string name="tennisint"><b><u>Tennis</u></b></string>
+    <string name="runint"><b><u>Run</u></b></string>
+    <string name="skiint"><b><u>Ski <![CDATA[&]]> Snowboard</u></b></string>
+    <string name="surveybutton"><b><u>Survey</u></b></string>
+    <string name="surveybutton2"><i><u>Click here to respond <b>Survey</b> to</u></i></string>
+
+    <string name="action_settings">Settings</string>
+    <string name="label_btn_find">Find</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="str_btn_find">Find</string>
+    <string name="pinkwhite">Pink <![CDATA[&]]> White</string>
+    <string name="accept">ACCEPT <![CDATA[&]]> REQUEST</string>
+    <string name="date">Request date <![CDATA[&]]> time</string>
+
+    <string-array name="place_type">
+        <item>airport</item>
+        <item>atm</item>
+        <item>bank</item>
+        <item>bus_station</item>
+        <item>church</item>
+        <item>doctor</item>
+        <item>hospital</item>
+        <item>mosque</item>
+        <item>movie_theater</item>
+        <item>hindu_temple</item>
+        <item>restaurant</item>
+    </string-array>
+
+    <string-array name="place_type_name">
+        <item>Airport</item>
+        <item>ATM</item>
+        <item>Bank</item>
+        <item>Bus Station</item>
+        <item>Church</item>
+        <item>Doctor</item>
+        <item>Hospital</item>
+        <item>Mosque</item>
+        <item>Movie Theater</item>
+        <item>Hindu Temple</item>
+        <item>Restaurant</item>
+    </string-array>
+
+    <!--San Francisco restaurants' information-->
+
+    <string name="aa">https://www.google.com/maps/place/Acquerello/@37.7915485,-122.421442,15z/data=!4m5!3m4!1s0x0:0xa5a20b813854425d!8m2!3d37.7915485!4d-122.421442</string>
+    <string name="bb">https://www.google.com/maps/place/Boulevard/@37.79332,-122.392761,15z/data=!4m5!3m4!1s0x0:0x34b391d08d9fe6bc!8m2!3d37.79332!4d-122.392761</string>
+    <string name="dd">https://www.google.com/maps/place/Delarosa/@37.8003028,-122.4391249,15z/data=!4m5!3m4!1s0x0:0xe1165ec97a6da48!8m2!3d37.8003028!4d-122.4391249</string>
+    <string name="gg">https://www.google.com/maps/place/Restaurant+Gary+Danko/@37.8058724,-122.4206313,15z/data=!4m5!3m4!1s0x0:0x8ee57d9f647dbc1!8m2!3d37.8058724!4d-122.4206313</string>
+    <string name="hh">https://www.google.com/maps/place/Hog+Island+Oyster+Co/@37.7960308,-122.3935689,15z/data=!4m5!3m4!1s0x0:0x830980e627627a81!8m2!3d37.7960308!4d-122.3935689</string>
+    <string name="hhh">https://www.google.com/maps/place/House+of+Prime+Rib/@37.7933928,-122.4227072,15z/data=!4m5!3m4!1s0x0:0x3ef25abd292344d9!8m2!3d37.7933928!4d-122.4227072</string>
+    <string name="ll">https://www.google.com/maps/place/La+Folie/@37.798144,-122.4220082,15z/data=!4m5!3m4!1s0x0:0x88d3a2ab149fb6b4!8m2!3d37.798144!4d-122.4220082</string>
+    <string name="nn">https://www.google.com/maps/place/La+Folie/@37.798144,-122.4220082,15z/data=!4m5!3m4!1s0x0:0x88d3a2ab149fb6b4!8m2!3d37.798144!4d-122.4220082</string>
+    <string name="ss">https://www.google.com/maps/place/Saison/@37.7795354,-122.392263,15z/data=!4m5!3m4!1s0x0:0x77a00452793abd5c!8m2!3d37.7795354!4d-122.392263</string>
+    <string name="sss">https://www.google.com/maps/place/Saison/@37.7795354,-122.392263,15z/data=!4m5!3m4!1s0x0:0x77a00452793abd5c!8m2!3d37.7795354!4d-122.392263</string>
+    <string name="tt">https://www.google.com/maps/place/Saison/@37.7795354,-122.392263,15z/data=!4m5!3m4!1s0x0:0x77a00452793abd5c!8m2!3d37.7795354!4d-122.392263</string>
+    <string name="ttt">https://www.google.com/maps/place/Tony\'s+Pizza+Napoletana/@37.8003257,-122.408985,15z/data=!4m5!3m4!1s0x0:0xbfb3fcde3487fb40!8m2!3d37.8003257!4d122.408985</string>
+
+    <string name="menua">http://www.acquerello.com/menus/PrixFixeMenu.pdf</string>
+    <string name="menub">http://www.boulevardrestaurant.com/menus/#boulevard-menus</string>
+    <string name="menud">http://www.delarosasf.com/</string>
+    <string name="menug">http://places.singleplatform.com/gary-danko-2/menu?ref=google</string>
+    <string name="menuh">https://hogislandoysters.com/</string>
+    <string name="menuhh">http://houseofprimerib.net/</string>
+    <string name="menul">http://www.lafolie.com/menus/#la-folie-menus3</string>
+    <string name="menun">http://www.nopasf.com/menu/dinner</string>
+    <string name="menus">https://www.zomato.com/san-francisco/saison-soma/menu?utm_source=Google<![CDATA[&]]>utm_medium=Local<![CDATA[&]]>utm_campaign=GoogleMenus</string>
+    <string name="menuss">http://www.sprucesf.com/food_wine</string>
+    <string name="menut">http://www.thehse.com/</string>
+    <string name="menutt">http://tonyspizzanapoletana.com/menu/</string>
+
+    <string name="opa">http://www.opentable.com/acquerello?ref=1068</string>
+    <string name="opb">http://www.opentable.com/r/boulevard-san-francisco</string>
+    <string name="opd">http://www.opentable.com/r/delarosas-downtown-san-francisco</string>
+    <string name="opg">http://www.opentable.com/gary-danko</string>
+    <string name="oph"></string>
+    <string name="ophh">http://www.opentable.com/san-francisco-restaurants?mn=5<![CDATA[&]]>ref=9859<![CDATA[&]]>sp=ppc_g_sf_cuis<![CDATA[&]]>gclid=Cj0KEQjwnKzABRDy2pb7nPSazdsBEiQAI4lZQCP0KHe-hPJly9uimsJfKJeIko5cFhj8qzcUmWaI8koaAq9C8P8HAQ</string>
+    <string name="opl">http://www.lafolie.com/menus/#la-folie-menus3</string>
+    <string name="opn">http://www.opentable.com/san-francisco/nopa-restaurants?ref=9886<![CDATA[&]]>sp=ppc_g_sf_hood<![CDATA[&]]>gclid=Cj0KEQjwnKzABRDy2pb7nPSazdsBEiQAI4lZQIIK2JPw9g53o4FNLfVxTj7hxZ6XVqpSxL3kfSdBHmcaApT78P8HAQ</string>
+    <string name="ops">http://www.opentable.com/saison-reservations-san-francisco</string>
+    <string name="opss">http://www.opentable.com/spruce</string>
+    <string name="opt"></string>
+    <string name="optt">http://www.opentable.com/r/tonys-pizza-napoletana-san-francisco</string>
+
+    <!--Denver restaurants' infomation-->
+
+    <string name="loc0">https://www.google.com/maps/place/CRC39A+-+Larimer+Square+Denver/@39.803259,-104.9742341,11z/data=!4m8!1m2!2m1!1sCru+Wine+Bar+denver+map!3m4!1s0x0:0x8298f08f614b28d6!8m2!3d39.7478499!4d-104.9988699</string>
+    <string name="loc1">https://www.google.com/maps/place/EDGE+Restaurant+and+Bar/@39.7464955,-104.998015,15z/data=!4m5!3m4!1s0x0:0x2c84dc972d992567!8m2!3d39.7464955!4d-104.998015</string>
+    <string name="loc2">https://www.google.com/maps/place/Guard+and+Grace/@39.74765,-104.9897191,15z/data=!4m5!3m4!1s0x0:0xff8859bf67c1b281!8m2!3d39.74765!4d-104.9897191</string>
+    <string name="loc3">https://www.google.com/maps/place/Hapa+Sushi+Grill+and+Sake+Bar/@39.7192954,-104.9548047,15z/data=!4m5!3m4!1s0x0:0x4d0bcc254c5e4e83!8m2!3d39.7192954!4d-104.9548047</string>
+    <string name="loc4">https://www.google.com/maps/place/Linger/@39.759526,-105.0114406,15z/data=!4m5!3m4!1s0x0:0xf787e81b653c2464!8m2!3d39.759526!4d-105.0114406</string>
+    <string name="loc5">https://www.google.com/maps/place/Lola+Coastal+Mexican/@39.7592302,-105.0109062,15z/data=!4m5!3m4!1s0x0:0x13126077f6ea9eb3!8m2!3d39.7592302!4d-105.0109062</string>
+    <string name="loc6">https://www.google.com/maps/place/Mister+Tuna/@39.765416,-104.9855702,15z/data=!4m5!3m4!1s0x0:0x5e3f4e2a7b550b12!8m2!3d39.765416!4d-104.9855702</string>
+    <string name="loc7">https://www.google.com/maps/place/Ocean+Prime/@39.7482934,-104.999026,15z/data=!4m5!3m4!1s0x0:0x3375ad123c92f1f5!8m2!3d39.7482934!4d-104.999026</string>
+    <string name="loc8">https://www.google.com/maps/place/Osteria+Marco/@39.7481801,-104.9991492,15z/data=!4m5!3m4!1s0x0:0x7bd31b04293b3006!8m2!3d39.7481801!4d-104.9991492</string>
+    <string name="loc9">https://www.google.com/maps/place/Rioja/@39.7479473,-104.9994686,15z/data=!4m5!3m4!1s0x0:0xed9b3022813b274c!8m2!3d39.7479473!4d-104.9994686</string>
+    <string name="loc10">https://www.google.com/maps/place/The+Squeaky+Bean/@39.750976,-105.0017343,15z/data=!4m2!3m1!1s0x0:0x27685318a5c36cc9?sa=X<![CDATA[&]]>ved=0ahUKEwjUqq-uwpTQAhUNxWMKHaZTB3oQ_BIIeDAK</string>
+    <string name="loc11">https://www.google.com/maps/place/Rio+Grande/@39.7502288,-105.0000807,15z/data=!4m2!3m1!1s0x0:0x727e635665949cb8?sa=X<![CDATA[&]]>ved=0ahUKEwjArebtwJTQAhULwmMKHcxTA_wQ_BIIejAK</string>
+    <string name="loc12">https://www.google.com/maps/place/Thirsty+Lion+Gastropub+and+Grill+-+Union+Station/@39.7523187,-105.0009258,15z/data=!4m2!3m1!1s0x0:0x810412311c26c755?sa=X<![CDATA[&]]>ved=0ahUKEwizkpXMwZTQAhUTz2MKHewlCdAQ_BIIeDAK</string>
+    <string name="loc13">https://www.google.com/maps/place/Zengo/@39.7551309,-105.0045533,15z/data=!4m2!3m1!1s0x0:0x50dfd423bda16db0?sa=X<![CDATA[&]]>ved=0ahUKEwjavcGjwpTQAhVJ6WMKHTWlBU0Q_BIIfzAO</string>
+
+    <string name="menu0">http://www.cruawinebar.com/</string>
+    <string name="menu1">http://www.edgerestaurantdenver.com/menus/dinner_menu/</string>
+    <string name="menu2">http://guardandgrace.com/</string>
+    <string name="menu3">http://hapasushi.com/dinner</string>
+    <string name="menu4">http://lingerdenver.com/</string>
+    <string name="menu5">http://www.loladenver.com/</string>
+    <string name="menu6">http://www.mistertuna.com/</string>
+    <string name="menu7">http://www.ocean-prime.com/locations-menus/denver/menus</string>
+    <string name="menu8">http://www.osteriamarco.com/</string>
+    <string name="menu9">http://www.riojadenver.com/</string>
+    <string name="menu10">http://www.thesqueakybean.com/</string>
+    <string name="menu11">https://www.riograndemexican.com/menus/</string>
+    <string name="menu12">http://www.thirstyliongastropub.com/denver/#denver-menu</string>
+    <string name="menu13">http://www.richardsandoval.com/zengodenver/</string>
+
+    <string name="open0"></string>
+    <string name="open1">http://www.opentable.com/edge-restaurant-and-bar</string>
+    <!--<string name="open2">http://www.opentable.com/edge-restaurant-and-bar</string>-->
+    <string name="open2">http://www.opentable.com/guard-and-grace-reservations-denver?restref=115339<![CDATA[&]]>datetime=2016-10-23T193A00<![CDATA[&]]>covers=2<![CDATA[&]]>searchdatetime=2016-10-23T193A00<![CDATA[&]]>partysize=2</string>
+    <string name="open3">http://www.opentable.com/hapa-sushi-grill-and-sake-bar-cherry-creek</string>
+    <string name="open4">http://www.opentable.com/linger</string>
+    <string name="open5"></string>
+    <string name="open6">http://www.opentable.com/r/mister-tuna-denver</string>
+    <string name="open7">http://www.opentable.com/ocean-prime-denver</string>
+    <string name="open8">http://www.opentable.com/osteria-marco</string>
+    <string name="open9">http://www.opentable.com/r/rioja-denver</string>
+    <string name="open10">http://www.opentable.com/squeaky-bean-reservations-denver</string>
+    <string name="open11">http://www.opentable.com/rio-grande-denver</string>
+    <string name="open12">http://www.opentable.com/thirsty-lion-gastropub-and-grill-denver</string>
+    <string name="open13">http://www.opentable.com/zengo-denver</string>
+
+    <string name="locinfosf">address: San Francisco, CA\n
+                                                        city: San Francisco\n
+                                                        state: California\n
+                                                        country: United States\n
+                                                        postalCode: null\n
+                                                        publicName: San Francisco\n
+                                                        zip: null\n
+                                                        url: null\n
+                                                        loc: 37.7749295/-122.4194155\n
+                                                        centre: 8411 Market Street</string>
+    <string name="locinfoboston"> address: Boston, MA\n
+                                                        city: Boston\n
+                                                        state: Massachusetts\n
+                                                        country: United States\n
+                                                        postalCode: null\n
+                                                        publicName: Boston\n
+                                                        zip: null\n
+                                                        url: null\n
+                                                        loc: 42.3600825/-71.0588801\n
+                                                        centre: City Hall Plaza</string>
+    <string name="locinfoplano">address: Plano, TX\n
+                                                        city: Plano\n
+                                                        state: Texas\n
+                                                        country: United States\n
+                                                        postalCode: null\n
+                                                        publicName: Plano\n
+                                                        zip: null\n
+                                                        url: null\n
+                                                        loc: 33.0198431/-96.6988856\n
+                                                        centre: 1508 K Avenue</string>
+    <string name="locinfony"> address: New York, NY\n
+                                                        city: New York\n
+                                                        state: New York\n
+                                                        country: United States\n
+                                                        postalCode: null\n
+                                                        publicName: New York\n
+                                                        zip: null\n
+                                                        url: null\n
+                                                        loc: 40.7127837/-74.0059413\n
+                                                        centre: 230 Broadway</string>
+    <string name="locinfows"> address: Washington, DC\n
+                                                        city: Washington\n
+                                                        state: District of Columbia\n
+                                                        country: United States\n
+                                                        postalCode: null\n
+                                                        publicName: Washington\n
+                                                        zip: null\n
+                                                        url: null\n
+                                                        loc: 38.9071923/-77.0368707\n
+                                                        centre: 1 Scott Circle Northwest</string>
+
+
+    <string name="addr">https://www.google.com/maps/place/Boulevard/@37.79332,-122.392761,15z/data=!4m5!3m4!1s0x0:0x34b391d08d9fe6bc!8m2!3d37.79332!4d-122.392761</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+
+    <string-array name="drawer_titles">
+        <item>Nearby Places</item>
+        <item>Providers</item>
+        <item>Create payment account</item>
+        <item>Contacts</item>
+        <!--<item>Activity</item>-->
+    </string-array>
+
+    <string-array name="drawer_company_titles">
+        <item>Nearby Places</item>
+        <item>Employees</item>
+        <item>Jobs</item>
+        <item>Announcements</item>
+        <item>Contacts</item>
+    </string-array>
+
+    <string-array name="drawer_broadmoor_titles">
+        <item>Nearby Places</item>
+        <item>Products</item>
+        <item>Create payment account</item>
+        <item>Talking</item>
+        <!--<item>Activity</item>-->
+    </string-array>
+
+    <array name="drawer_broadmoor_icons">
+        <item>@drawable/mylocation</item>
+        <item>@drawable/producticon</item>
+        <item>@drawable/payment</item>
+        <item>@drawable/messages</item>
+        <!--<item>@drawable/sports</item>-->
+    </array>
+
+    <string-array name="drawer_provider_titles">
+        <item>My Profile</item>
+        <item>Calendar</item>
+        <item>My Services</item>
+        <item>My Products</item>
+        <item>Reply for Booking</item>
+        <item>Good Talking</item>
+        <item>SMS messenger</item>
+        <item>Nearby Places</item>
+    </string-array>
+
+    <array name="drawer_icons">
+        <item>@drawable/mylocation</item>
+        <item>@drawable/provider</item>
+        <item>@drawable/payment</item>
+        <item>@drawable/contacticon2</item>
+        <!--<item>@drawable/sports</item>-->
+    </array>
+
+    <array name="drawer_company_icons">
+        <item>@drawable/mylocation</item>
+        <item>@drawable/employeeicon</item>
+        <item>@drawable/job2</item>
+        <item>@drawable/announcementicon</item>
+        <item>@drawable/contacticon2</item>
+    </array>
+
+    <array name="drawer_provider_icons">
+        <item>@drawable/provider</item>
+        <item>@drawable/th</item>
+        <item>@drawable/beautyserviceicon</item>
+        <item>@drawable/producticon</item>
+        <item>@drawable/bookingicon</item>
+        <item>@drawable/messages</item>
+        <item>@drawable/smsicon</item>
+        <item>@drawable/mylocation</item>
+    </array>
+
+    <string-array name="footer_titles">
+        <item>Inbox</item>
+        <item>Weather</item>
+    </string-array>
+
+    <array name="footer_icons">
+        <item>@drawable/mailbox2</item>
+        <item>@drawable/weather</item>
+    </array>
+
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_location">Map</string>
+
+    <string name="title_activity_second_activiy">Interstitial</string>
+    <string name="msg_welcome">Welcome to Admob. Click on the below button to launch the Interstitial ad.</string>
+    <string name="btn_fullscreen_ad">Show Fullscreen Ad</string>
+
+
+    <!-- AdMob ad unit IDs -->
+    <string name="banner_home_footer1">ca-app-pub-7394008719373168/9700378139</string>
+    <string name="banner_home_footer">ca-app-pub-7394008719373168/4432573732</string>
+    <string name="title_activity_checkin_list">CheckinListActivity</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+
+    <!--<string name="interstitial_full_screen">ca-app-pub-0664570763252260/1769900428</string>-->
+
+    <string name="action_search">Search</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_about">About</string>
+
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="later">Later</string>
+
+    <string name="wind">Wind</string>
+    <string name="pressure">Pressure</string>
+    <string name="humidity">Humidity</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+
+    <string name="last_update">Last update:\n%s</string>
+    <string name="last_update_widget">\nLast update: %s</string>
+
+    <string name="search_title">Search for city</string>
+
+    <string name="downloading_data">Downloading your data ...</string>
+    <string name="getting_location">Getting your location ...</string>
+
+    <string name="error_dateFormat">DATE FORMAT ERROR</string>
+
+    <string name="setting_dateFormat">Date Format</string>
+    <string name="setting_dateFormatCustom">Custom Date Format</string>
+    <string name="setting_dateFormatCustom_summary">Provide the custom SimpleDateFormat string to be used</string>
+    <string name="setting_lengthUnits">Length units</string>
+    <string name="setting_speedUnits">Speed units</string>
+    <string name="setting_tempUnits">Temperature units</string>
+    <string name="setting_showTempAsInteger">Show temperature only as an integer</string>
+    <string name="setting_pressureUnits">Pressure units</string>
+    <string name="setting_theme">Theme</string>
+    <string name="setting_auto_detect_location">Detect Location</string>
+    <string name="setting_differentiateDaysByTint">Differentiate Days with Color</string>
+    <string name="setting_refreshInterval">Background refresh interval</string>
+    <string name="setting_unit_mps">Meters per second (m/s)</string>
+    <string name="setting_unit_kph">Kilometers per hour (kph)</string>
+    <string name="setting_unit_mph">Miles per hour (mph)</string>
+    <string name="setting_unit_bft">Beaufort wind scale (bft)</string>
+    <string name="setting_unit_kn">Knots (kn)</string>
+    <string name="setting_wind_direction_format">Wind direction format</string>
+    <string name="settings_none">None</string>
+    <string name="setting_apiKey">API key</string>
+    <string name="setting_apiKey_summary">Custom API key for OpenWeatherMap queries</string>
+
+    <string name="setting_unit_Celsuis">Celsius</string>
+    <string name="setting_unit_Fahrenheit">Fahrenheit</string>
+    <string name="setting_unit_Kelvin">Kelvin</string>
+
+    <string name="setting_unit_mm">Millimeters (mm)</string>
+    <string name="setting_unit_in">Inches (in)</string>
+
+    <string name="setting_unit_hpa">hPa</string>
+    <string name="setting_unit_kpa">kPa</string>
+    <string name="setting_unit_mmhg">mm Hg</string>
+    <string name="setting_unit_inhg">in Hg</string>
+
+    <string name="speed_unit_mps">m/s</string>
+    <string name="speed_unit_kph">kph</string>
+    <string name="speed_unit_mph">mph</string>
+    <string name="speed_unit_kn">kn</string>
+
+    <string name="wind_direction_format_none">No indication</string>
+    <string name="wind_direction_format_arrows">Arrows</string>
+    <string name="wind_direction_format_abbreviations">Abbreviations</string>
+
+    <string name="pressure_unit_hpa">hPa</string>
+    <string name="pressure_unit_kpa">kPa</string>
+    <string name="pressure_unit_mmhg">mm Hg</string>
+
+    <string name="setting_theme_fresh">Fresh</string>
+    <string name="setting_theme_classic">Classic</string>
+    <string name="setting_theme_dark">Fresh Dark</string>
+    <string name="setting_theme_classic_dark">Classic Dark</string>
+
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+
+    <string name="msg_err_parsing_json">Error parsing JSON.</string>
+    <string name="msg_connection_problem">There is a problem with your internet connection.</string>
+    <string name="msg_connection_not_available">Connection not available.</string>
+    <string name="msg_city_not_found">Specified city is not found.</string>
+
+    <string name="weather_sunny" translatable="false">&#xf00d;</string>
+    <string name="weather_clear_night" translatable="false">&#xf02e;</string>
+    <string name="weather_foggy" translatable="false">&#xf014;</string>
+    <string name="weather_cloudy" translatable="false">&#xf013;</string>
+    <string name="weather_rainy" translatable="false">&#xf019;</string>
+    <string name="weather_snowy" translatable="false">&#xf01b;</string>
+    <string name="weather_thunder" translatable="false">&#xf01e;</string>
+    <string name="weather_drizzle" translatable="false">&#xf01c;</string>
+
+    <string name="wind_direction_north">N</string>
+    <string name="wind_direction_north_north_east">NNE</string>
+    <string name="wind_direction_north_east">NE</string>
+    <string name="wind_direction_east_north_east">ENE</string>
+    <string name="wind_direction_east">E</string>
+    <string name="wind_direction_east_south_east">ESE</string>
+    <string name="wind_direction_south_east">SE</string>
+    <string name="wind_direction_south_south_east">SSE</string>
+    <string name="wind_direction_south">S</string>
+    <string name="wind_direction_south_south_west">SSW</string>
+    <string name="wind_direction_south_west">SW</string>
+    <string name="wind_direction_west_south_west">WSW</string>
+    <string name="wind_direction_west">W</string>
+    <string name="wind_direction_west_north_west">WNW</string>
+    <string name="wind_direction_north_west">NW</string>
+    <string name="wind_direction_north_north_west">NNW</string>
+    <string name="msg_too_many_requests">Too many requests. Please try again.</string>
+
+    <!-- 1: temperature; 2: unit -->
+    <string name="dash_clock_status">%1$s%2$s</string>
+    <!-- 1: temperature; 2: unit; 3: weather description -->
+    <string name="dash_clock_expanded_title">%1$s%2$s - %3$s</string>
+    <!-- 1: city; 2: country; 3: wind; 4: speed units; 5: pressure; 6: pressure units; 7: humidity -->
+    <string name="dash_clock_expanded_body">%1$s, %2$s\nWind: %3$s %4$s\nPressure: %5$s %6$s\nHumidity: %7$s %%\n</string>
+    <string name="settings_title_units">Units</string>
+    <string name="settings_title_display">Display</string>
+    <string name="settings_title_data">Data</string>
+    <string name="setting_displayDecimalZeroes">Display decimal zeroes</string>
+    <string name="settings_title_location">Location</string>
+    <string name="setting_update_location_automatically">Update location in background</string>
+
+    <string name="location_settings">Location Settings</string>
+    <string name="location_settings_message">Location is not enabled. Do you wish to go to the settings menu?</string>
+    <string name="location_settings_button">Settings</string>
+    <string name="action_weather_map">Weather Map</string>
+    <string name="rain">Rain</string>
+    <string name="temperature">Temperature</string>
+    <string name="action_graphs">Graphs</string>
+
+
+    <!--<string name="action_settings">Settings</string>-->
+    <string name="title_activity_route_picker">RoutePicker</string>
+    <string name="gps_network_not_enabled">We are unable to get your current location since your GPS is not enabled. You can either enable your GPS or fill your location manually.</string>
+    <string name="open_location_settings">Enable GPS?</string>
+    <string name="location_settings_cancel">Fill Manually</string>
+    <string name="data_network_not_enabled">You are not connected to the internet. Do you want to enable now?</string>
+    <string name="open_data_settings">Go to network settings</string>
+    <string name="enable_data_network_cancel">Exit application</string>
+
+    <string name="use_gps">Use GPS for location</string>
+    <string name="use_wifi">Turn on Wi-Fi</string>
+    <string name="improve_location_msg">This app wants to change your device settings:</string>
+    <string name="poor_net">No or poor internet connection</string>
+    <string name="server_error">Oops!! Something went wrong on server side.</string>
+    <string name="try_again">Try again</string>
+    <!--<string name="drawer_open">Drawer Open</string>-->
+    <string name="drawer_closed">Drawer Closed</string>
+    <string name="title_activity_search">Search</string>
+
+    <string name="title_activity_places">Places</string>
+    <string name="title_activity_place_result">Places</string>
+
+
+    <string name="no_location_detected">Cannot get location</string>
+    <string name="location_updated_message">Updated Location</string>
+
+    <string name="title">SENDER</string>
+    <string name="content_small">This is the preview of the full SMS. To read more click on the SMS.</string>
+    <string name="title_activity_sms_detailed_view">SmsDetailedView</string>
+    <string name="write_message">Write Message..</string>
+    <string name="settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="google_drive_backup">Backup Messages</string>
+    <string name="backup_on_drive">Backup all your messages on Google Drive</string>
+    <string name="app_label">Search</string>
+    <string name="search_hint">Search Messages..</string>
+    <string name="search">Search</string>
+    <string name="sms_delivered">SMS delivered</string>
+    <string name="sms_not_delivered">SMS not delivered</string>
+    <string name="please_write_number">Please provide a number</string>
+    <string name="please_write_message">Please write some message</string>
+    <string name="cant_send">Can\'t send sms to this contact.</string>
+    <string name="please_wait">Please wait..</string>
+    <string name="restore_backup">Restore Backup</string>
+    <string name="restore_backup_all">Restore all your drive stored sms.</string>
+    <string name="google_drive_restore">Restore Backup</string>
+
+</resources>

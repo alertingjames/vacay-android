@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_employee_send_mail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mailbackground"
+    tools:context="com.mv.vacay.main.provider.EmployeeSendMailActivity">
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/back2"/>
+</FrameLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="@dimen/drawer_item_height">
+
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/mailbox2"
+        android:layout_marginLeft="@dimen/drawer_left" />
+
+    <TextView
+        android:id="@+id/item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:text="Home"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/text"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/item_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:visibility="gone"
+        android:textColor="@color/google_white"
+        android:layout_marginRight="@dimen/drawer_right"/>
+
+</LinearLayout>

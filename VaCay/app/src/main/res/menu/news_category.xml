@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/cnn"
+        android:title="CNN"
+        android:icon="@drawable/ccnn"
+        android:showAsAction="always"
+        android:onClick="cnn"
+        />
+
+    <item
+        android:id="@+id/cnbc"
+        android:title="CNBC"
+        android:icon="@drawable/cnbc"
+        android:showAsAction="always"
+        android:onClick="cnbc"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/fox"
+        android:title="FOX"
+        android:icon="@drawable/fox"
+        android:showAsAction="always"
+        android:onClick="fox"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/bloomberg"
+        android:title="BLOOMBERG"
+        android:icon="@drawable/bloomberg"
+        android:showAsAction="always"
+        android:onClick="bloomberg"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/cancel"
+        android:title="@string/cancel"
+        android:showAsAction="always"
+        android:onClick="cancel"
+        app:showAsAction="always"
+        android:icon="@drawable/back1"/>
+
+</menu>
